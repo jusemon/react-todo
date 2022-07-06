@@ -1,0 +1,128 @@
+:root {
+  --primary: #03045eff;
+  --secondary: #0077b6ff;
+  --tertiary: #00b4d8ff;
+  --background: #90e0efff;
+  --background-light: #caf0f8ff;
+  --accent: #7400b8;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--tertiary);
+  color: var(--primary);
+  font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+}
+
+.app-title,
+.app-navigation {
+  max-width: 700px;
+  width: 100%;
+}
+
+.app-navigation-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.app-navigation-item {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  padding: 0.75rem;
+  border-radius: 10px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.app-navigation-item.selected {
+  background: var(--primary);
+  color: var(--background-light);
+}
+
+.task-item,
+.task-form {
+  background-color: var(--tertiary);
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-form {
+  background-color: var(--secondary);
+  color: bac;
+  border-radius: 5px;
+  padding: 0.75rem;
+}
+
+.task-item.editing,
+.task-item.editing input {
+  background-color: var(--secondary);
+  color: var(--background-light);
+}
+
+.task-item-text.completed {
+  text-decoration: line-through;
+}
+
+.task-form input:focus,
+.task-item input:focus {
+  outline: none;
+}
+
+.task-form input,
+.task-item input {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.task-item input[type='checkbox'] {
+  width: auto;
+  font-size: 17px;
+}
+
+.task-form input::placeholder {
+  color: var(--background-light);
+}
+
+.task-form input {
+  font-size: 14px;
+  color: var(--background-light);
+  background-color: var(--secondary);
+}
+
+.task-item-footer,
+.task-form-footer {
+  display: flex;
+  font-size: 17px;
+}
