@@ -18,7 +18,7 @@
 body {
   background-color: var(--background);
   color: var(--primary);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Edu NSW ACT Foundation', cursive;
   font-size: 14px;
 }
 
@@ -78,6 +78,10 @@ body {
   justify-content: space-between;
 }
 
+.task-item-text::first-letter{
+  text-transform: capitalize;
+}
+
 .task-form {
   background-color: var(--secondary);
   color: bac;
@@ -112,6 +116,7 @@ body {
 }
 
 .task-form input::placeholder {
+  font-family: 'Edu NSW ACT Foundation', cursive;
   color: var(--background-light);
 }
 
