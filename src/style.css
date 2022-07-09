@@ -18,8 +18,8 @@
 body {
   background-color: var(--background);
   color: var(--primary);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 1rem;
 }
 
 .app {
@@ -78,6 +78,10 @@ body {
   justify-content: space-between;
 }
 
+.task-item-text::first-letter{
+  text-transform: capitalize;
+}
+
 .task-form {
   background-color: var(--secondary);
   color: bac;
@@ -107,16 +111,25 @@ body {
 }
 
 .task-item input[type='checkbox'] {
-  width: auto;
-  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1rem;
+  width: 1rem;
 }
 
 .task-form input::placeholder {
+  font-family: 'Edu NSW ACT Foundation', cursive;
   color: var(--background-light);
 }
 
+.task-item input[type='text'] {
+  font-size: 1rem;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
 .task-form input {
-  font-size: 14px;
+  font-size: 1rem;
+  font-family: 'Edu NSW ACT Foundation', cursive;
   color: var(--background-light);
   background-color: var(--secondary);
 }
@@ -124,5 +137,6 @@ body {
 .task-item-footer,
 .task-form-footer {
   display: flex;
-  font-size: 17px;
+  font-size: 1.1rem;
+  align-items: center;
 }
